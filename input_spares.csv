@@ -1,0 +1,7 @@
+part_name,part_number,description,unit_of_measurement,critical_status,maker,drawing_number,drawing_position,dimensions,minimum_quantity,maximum_quantity,price_OEM,price_original,price_replacement,dangerous_goods,expiry_range,model_names
+"SEALING SET, LPU-D v2a",160G4281,SEALING SET FOR LPU-D v2a,EACH,CRITICAL,FD51EFAB-2F27-464A-9A40-FD544EFA214F,,,,,,,,,false,,0.25m3
+"PRESSURE N/O SWITCH 100 BAR FALLING","380-1378","PRESSURE N/O SWITCH 100 BAR FALLING","EACH","CRITICAL","FD51EFAB-2F27-464A-9A40-FD544EFA214F","","","","","","","","false","","LPU-D v2a"
+"PUMP SET, LPU-D v2a","160G4282","PUMP SET FOR LPU-D v2a","EACH","CRITICAL","FD51EFAB-2F27-464A-9A40-FD544EFA214F","","","","","","","","false","","LPU-D v2a"
+"LPU MOTOR CAPACITOR 16uF","160G4510","LPU MOTOR CAPACITOR 16uF","EACH","CRITICAL","FD51EFAB-2F27-464A-9A40-FD544EFA214F","","","","","","","","false","","LPU-D v2a"
+"COIL 230 VAC 50/60 Hz","344-2504","COIL 230 VAC 50/60 Hz, DANFOSS","EACH","CRITICAL","FD51EFAB-2F27-464A-9A40-FD544EFA214F","","","","","","","","false","","LPU-D v2a"
+"DPI-E-68 INDICATOR FOR LPU-D","160B4172","DPI-E-68 INDICATOR FOR LPU-D","EACH","CRITICAL","FD51EFAB-2F27-464A-9A40-FD544EFA214F","","","","","","","","false","","LPU-D v2a"
