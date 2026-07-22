@@ -12,7 +12,7 @@ base_url: "https://seaspan-j3.jibe.solutions"
 # any /api/* call, and paste it below. Tokens observed in the HAR are valid
 # for 48 hours from issue; the importer will detect an expired/invalid token
 # (HTTP 401/403) and stop with a clear message rather than silently failing.
-session_token: "PASTE_YOUR_SESSION_JWT_HERE"
+session_token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoiZ2hVQ3pOU3RSZlhYUE9WbGF1Uy92bFYvMFlLOTBFVXZ3bEY3ZTZzV0p3YVZNbGJBd1QwVnZVM3J5Y1dFTHU3U3MrK3ZiNjRZUmM2bnhIYlc2V1cxbHhVZW83TjZjZlI0aVpiUEttZ2hwbm1TWFp0R3Y3SXFDTU42OHJoMVpUd2t4ck0zY00wZnJLeFVreVA0RXp5Z1BzMnNNRENmMjVpRzJCdFhuTytOMWU0PSIsImlhdCI6MTc4NDY4OTIwMCwiZXhwIjoxNzg0ODYyMDAwfQ.mQyY4B2ZoYTaH1ihGfommelpq2VaiUf4che6H_2Thq4"
 
 # --- LOOKUP TABLES ------------------------------------------------------
 # The HAR confirms the `criticality` lookup uses this exact table name.
