@@ -1,0 +1,38 @@
+# ---------------------------------------------------------------------------
+# Seaspan J3 spares bulk-importer — configuration
+# ---------------------------------------------------------------------------
+
+# Base URL of the J3 app (from the HAR).
+base_url: "https://seaspan-j3.jibe.solutions"
+
+# --- AUTH -------------------------------------------------------------------
+# The HAR does not contain a login request (capture started mid-session), so
+# this tool cannot obtain a session token on its own. Log into the J3 web
+# app, open DevTools -> Network, copy the `session` query-string value from
+# any /api/* call, and paste it below. Tokens observed in the HAR are valid
+# for 48 hours from issue; the importer will detect an expired/invalid token
+# (HTTP 401/403) and stop with a clear message rather than silently failing.
+session_token: "PASTE_YOUR_SESSION_JWT_HERE"
+
+# --- LOOKUP TABLES ------------------------------------------------------
+# The HAR confirms the `criticality` lookup uses this exact table name.
+# `unit_of_measurement` and `material` follow the same j3_pms_lib_* naming
+# convention seen elsewhere in the HAR, but no request in the capture ever
+# calls them, so these two names are NOT confirmed against a real request.
+# If the importer's startup lookup call 404s / returns empty, open the J3 UI,
+# watch the Network tab while opening the "Unit of Measurement" or "Material"
+# dropdown on the Add Spare form, and correct the table name here.
+lookup_tables:
+  criticality: "j3_pms_lib_criticality"          # confirmed in HAR
+  unit_of_measurement: "j3_pms_lib_unit_of_measurement"  # UNCONFIRMED - verify
+  material: "j3_pms_lib_material"                # UNCONFIRMED - verify
+
+# --- EXECUTION ---------------------------------------------------------
+delay_between_requests_seconds: 15   # per Phase 5 spec — pause between rows
+max_retries: 3
+retry_backoff_seconds: 5
+request_timeout_seconds: 30
+
+# --- FILES ---------------------------------------------------------------
+csv_input: "spares_import_template.csv"
+output_dir: "output"

@@ -1,0 +1,4 @@
+part_number,part_name,description,maker_name,model_name,criticality_name,unit_of_measurement_name,drawing_number,drawing_position,material_name,dimensions,minimum_quantity,maximum_quantity,price_oem,price_original,price_replacement,dangerous_goods,expiry_range,operational_category,tags
+SEASPANSPECIFIC3793,3-way piston valve,3-way piston valve,DVZ,DVZ 5000 FSU,Not Critical,Each,,,,,,,,,,false,,,
+SEASPANSPECIFIC3794,Cylinder,Cylinder for 3-way piston valve,DVZ,DVZ 5000 FSU,Essential,Each,POS-10,Pos. 10,,,2,10,,,,false,,,pump|spare
+SEASPANSPECIFIC3795,Hexagon nut,Hexagon nut PIN,DVZ,DVZ 5000 FSU - OILCHIEF,Critical,Each,,Pos. 33,,,,,,,,false,,,
